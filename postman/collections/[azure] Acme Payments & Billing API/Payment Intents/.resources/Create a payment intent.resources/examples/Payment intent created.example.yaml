@@ -1,0 +1,37 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/intents"
+  method: POST
+  headers:
+    - key: Content-Type
+      value: application/json
+    - key: Accept
+      value: application/json
+    - key: Ocp-Apim-Subscription-Key
+      value: <API Key>
+      description: "Added as a part of security scheme: apikey"
+  body:
+    type: json
+    content: |-
+      {
+        "orderId": "ord_94812",
+        "amountCents": 4998,
+        "currency": "USD",
+        "captureMethod": "automatic"
+      }
+response:
+  statusCode: 201
+  statusText: Created
+  headers:
+    Content-Type: application/json
+  body:
+    type: json
+    content: |-
+      {
+        "id": "pi_3Qx89A",
+        "orderId": "ord_94812",
+        "amountCents": 4998,
+        "currency": "USD",
+        "status": "requires_payment_method"
+      }
+order: 1000

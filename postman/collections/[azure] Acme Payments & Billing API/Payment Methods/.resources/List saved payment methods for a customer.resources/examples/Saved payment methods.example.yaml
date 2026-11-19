@@ -1,0 +1,32 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/customers/:customerId/methods"
+  method: GET
+  headers:
+    - key: Accept
+      value: application/json
+    - key: Ocp-Apim-Subscription-Key
+      value: <API Key>
+      description: "Added as a part of security scheme: apikey"
+  pathVariables:
+    customerId: string
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: application/json
+  body:
+    type: json
+    content: |-
+      {
+        "methods": [
+          {
+            "id": "string",
+            "brand": "visa",
+            "last4": "4242",
+            "expMonth": 0,
+            "expYear": 0
+          }
+        ]
+      }
+order: 1000

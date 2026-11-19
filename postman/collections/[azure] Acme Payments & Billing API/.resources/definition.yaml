@@ -1,0 +1,19 @@
+$kind: collection
+description: >-
+  Authorizes, captures, and refunds card and ACH payment intents across Acme
+  Commerce channels.
+
+
+  Contact Support:
+   Name: Payments Engineering
+   Email: payments-apis@acme-commerce.example
+variables:
+  baseUrl: https://acme-gw-235a30.azure-api.net/payments
+auth:
+  - id: 93bd6cd0-4292-422a-8072-f278152a49b8
+    type: apikey
+    name: apikey auth
+    credentials:
+      key: Ocp-Apim-Subscription-Key
+      value: "{{apiKey}}"
+      in: header

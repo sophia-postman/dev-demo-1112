@@ -1,0 +1,17 @@
+$kind: http-request
+description: Refund a captured payment
+url: "{{baseUrl}}/refunds"
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: application/json
+body:
+  type: json
+  content: |-
+    {
+      "intentId": "string",
+      "amountCents": 0,
+      "reason": "duplicate"
+    }
+examples: ./.resources/Refund a captured payment.resources/examples
+order: 1000
