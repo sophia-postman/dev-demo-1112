@@ -1,0 +1,10 @@
+$kind: http-request
+description: Get payment intent status
+url: "{{baseUrl}}/intents/:intentId"
+method: GET
+headers:
+  Accept: application/json
+pathVariables:
+  intentId: pi_3Qx89A
+examples: ./.resources/Get payment intent status.resources/examples
+order: 2000

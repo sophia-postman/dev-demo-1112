@@ -1,0 +1,28 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/intents/:intentId"
+  method: GET
+  headers:
+    - key: Accept
+      value: application/json
+    - key: Ocp-Apim-Subscription-Key
+      value: <API Key>
+      description: "Added as a part of security scheme: apikey"
+  pathVariables:
+    intentId: pi_3Qx89A
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: application/json
+  body:
+    type: json
+    content: |-
+      {
+        "id": "pi_3Qx89A",
+        "orderId": "ord_94812",
+        "amountCents": 4998,
+        "currency": "USD",
+        "status": "requires_payment_method"
+      }
+order: 1000

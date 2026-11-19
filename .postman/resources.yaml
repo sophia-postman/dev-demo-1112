@@ -1,0 +1,5 @@
+workspace:
+  id: 9093c417-98c4-462c-98b4-a1bb9313dacb
+cloudResources:
+  collections:
+    ../postman/collections/[azure] Acme Payments & Billing API: 60318063-f4d3a89c-08c0-46e5-b8ad-b97f38bbf19e

@@ -1,0 +1,10 @@
+$kind: http-request
+description: Capture an authorized payment intent
+url: "{{baseUrl}}/intents/:intentId/capture"
+method: POST
+headers:
+  Accept: application/json
+pathVariables:
+  intentId: string
+examples: ./.resources/Capture an authorized payment intent.resources/examples
+order: 3000

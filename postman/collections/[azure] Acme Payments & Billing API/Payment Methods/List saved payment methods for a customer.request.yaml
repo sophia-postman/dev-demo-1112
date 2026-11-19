@@ -1,0 +1,10 @@
+$kind: http-request
+description: List saved payment methods for a customer
+url: "{{baseUrl}}/customers/:customerId/methods"
+method: GET
+headers:
+  Accept: application/json
+pathVariables:
+  customerId: string
+examples: ./.resources/List saved payment methods for a customer.resources/examples
+order: 1000

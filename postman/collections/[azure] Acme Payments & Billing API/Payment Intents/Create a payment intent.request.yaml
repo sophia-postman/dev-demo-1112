@@ -1,0 +1,18 @@
+$kind: http-request
+description: Create a payment intent
+url: "{{baseUrl}}/intents"
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: application/json
+body:
+  type: json
+  content: |-
+    {
+      "orderId": "ord_94812",
+      "amountCents": 4998,
+      "currency": "USD",
+      "captureMethod": "automatic"
+    }
+examples: ./.resources/Create a payment intent.resources/examples
+order: 1000
